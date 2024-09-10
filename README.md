@@ -6,7 +6,7 @@
 
 ![System](https://github.com/user-attachments/assets/5973d357-61af-4116-8630-62e1616430e1)
 
-## Contents
+## Repository Contents
 The project consists of the following components:
 
 
@@ -63,7 +63,9 @@ The Single Port Sync. RAM module implements a memory block with a single data po
 | dout      |  Output  | 8 bit   | Data output |
 | tx_valid  |  Output  | 1 bit   | HIGH when the command is a memory read; indicates valid data in dout |
 
-* The MSB two bits of din (din[9:8]) determine the operation to be performed:
+* Operation Codes:
+
+  The MSB two bits of din (din[9:8]) determine the operation to be performed:
 
 |    Port   | din[9:8] | Command | Description |
 | :---: | :---: | :---: | :---  |
